@@ -19,7 +19,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Scoped wrapper (replaces the old body rules so it won't clash with the shared layout) */
 .about-wrapper {
     padding: 24px;
     background: var(--page);
@@ -191,7 +190,6 @@ html {
     font-weight: 600;
 }
 
-/* Read More toggle (replaces the old <details> styles) */
 .image-Item .bio {
     width: 100%;
     margin-top: 8px;
