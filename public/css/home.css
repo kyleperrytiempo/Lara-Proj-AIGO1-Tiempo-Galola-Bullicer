@@ -1,21 +1,45 @@
+/* Hero slider */
 .hero { position: relative; height: 75vh; min-height: 420px; overflow: hidden; }
 
 .slide {
     position: absolute;
     inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     opacity: 0;
     transition: opacity 0.7s ease;
 }
 .slide.active { opacity: 1; }
 
+.slide img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      /* fills the slide, crops nicely */
+}
+
+/* Dark overlay so the white text stays readable over any photo */
+.slide::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(20, 30, 50, 0.45);
+}
+
+/* keep everything else in .slide-content the same, just add: */
 .slide-content {
+    position: relative;   /* sits above the overlay */
+    z-index: 1;
     text-align: center;
     color: #fff;
     max-width: 700px;
     padding: 0 20px;
+    margin: 0 auto;
+    /* center the content vertically over the image */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
 }
 .slide-content h1 { font-size: 3rem; margin-bottom: 16px; }
 .slide-content p { font-size: 1.2rem; line-height: 1.6; }
