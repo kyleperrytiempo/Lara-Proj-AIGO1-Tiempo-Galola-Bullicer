@@ -5,7 +5,7 @@
 @section('content')
     <div class="about-wrapper">
 
-        {{-- Hero --}}
+        {{----------------------- Hero ------------------------}}
         <section class="AboutPage_1 reveal">
             <h1 class="card">For Eyes</h1>
             <div class="hero-copy">
@@ -14,19 +14,19 @@
             </div>
         </section>
 
-        {{-- Offers --}}
+        {{----------------------- Offers ----------------------}}
         <section class="offers reveal" aria-labelledby="offers-title">
             <h2 id="offers-title">What We Offer</h2>
-            <ul class="OffersList">
-                <li>Comprehensive eye exams</li>
-                <li>A wide selection of stylish frames</li>
-                <li>Quality prescription lenses</li>
-            </ul>
+                <ul class="OffersList">
+                    <li>Comprehensive eye exams</li>
+                    <li>A wide selection of stylish frames</li>
+                    <li>Quality prescription lenses</li>
+                </ul>
             <p class="offers-and">And more!</p>
-            <h3>All at prices that anyone can afford.</h3>
+                <h3>All at prices that anyone can afford.</h3>
         </section>
 
-        {{-- Staff --}}
+        {{------------------- Staff -------------------}}
         <section class="About Staff reveal" aria-labelledby="staff-title">
             <h2 id="staff-title">The People Who Started It All</h2>
 
@@ -34,8 +34,8 @@
 
                 <article class="image-Item" id="AboutZandik">
                     <img src="{{ asset('images/Dr.IlDottore1.jpg') }}" alt="Portrait of Dr. Zandik" title="Dr. Zandik" loading="lazy">
-                    <h3>Dr. Zandik</h3>
-                    <p class="staff-role">Founder &amp; Lead Optometrist</p>
+                        <h3>Dr. Zandik</h3>
+                        <p class="staff-role">Founder &amp; Lead Optometrist</p>
                     <div class="bio" id="bio-Zandik" hidden>
                         <ul>
                             <li>Age: 32</li>
@@ -48,8 +48,8 @@
 
                 <article class="image-Item" id="AboutGregory">
                     <img src="{{ asset('images/Dr.House.png') }}" alt="Portrait of Dr. Gregory" title="Dr. Gregory" loading="lazy">
-                    <h3>Dr. Gregory</h3>
-                    <p class="staff-role">Licensed Optician</p>
+                        <h3>Dr. Gregory</h3>
+                        <p class="staff-role">Licensed Optician</p>
                     <div class="bio" id="bio-Gregory" hidden>
                         <ul>
                             <li>Age: 50</li>
@@ -63,8 +63,8 @@
 
                 <article class="image-Item" id="AboutKyle">
                     <img src="{{ asset('images/Kyle.jpg') }}" alt="Portrait of Kyle Perry" title="Kyle Perry" loading="lazy">
-                    <h3>Kyle Perry</h3>
-                    <p class="staff-role">Customer Care &amp; Frame Stylist</p>
+                         <h3>Kyle Perry</h3>
+                        <p class="staff-role">Customer Care &amp; Frame Stylist</p>
                     <div class="bio" id="bio-Kyle" hidden>
                         <ul>
                             <li>Age: 23</li>
@@ -78,7 +78,7 @@
             </div>
         </section>
 
-        {{-- Shop facts with animated counters --}}
+        {{----------------- Shop facts ----------------}}
         <section id="shop-facts" class="shop-facts reveal" aria-label="Shop facts">
             <p class="facts-numbers">
                 <span class="fact"><span class="fact-number" data-target="5000">0</span>+ Happy Customers</span>
@@ -89,7 +89,7 @@
                 <span class="sep">•</span>
                 <span class="fact"><span class="fact-number" data-target="3">0</span> Branches</span>
             </p>
-            <p>Discover our shop, learn about our story and values, and find an easy way to reach us.</p>
+                <p>Discover our shop, learn about our story and values, and find an easy way to reach us.</p>
         </section>
 
     </div>
