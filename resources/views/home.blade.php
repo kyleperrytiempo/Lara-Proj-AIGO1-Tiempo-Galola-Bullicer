@@ -3,33 +3,35 @@
 @section('title', 'Home | For Eyes')
 
 @section('content')
-    <section class="hero">
-        <div class="slider" id="slider">
-            <div class="slide active" 
-            style="background-image: URL('resources\Images\Glasses.jpg'); background-size: cover;">
-                <div class="slide-content">
-                    <h1>See the World Clearly</h1>
-                    <p>Premium prescription lenses fitted by licensed optometrists — at prices your family can afford.</p>
-                </div>
-            </div>
-            <div class="slide" style="background: linear-gradient(135deg, #f72585, #b5179e);">
-                <div class="slide-content">
-                    <h1>Frames That Fit Your Style</h1>
-                    <p>Over 150 frame styles — from classic to trendy — with free fitting and lifetime adjustments.</p>
-                </div>
-            </div>
-            <div class="slide" style="background: linear-gradient(135deg, #06d6a0, #118ab2);">
-                <div class="slide-content">
-                    <h1>Free Eye Checkups</h1>
-                    <p>Walk in for a comprehensive eye exam, Monday to Saturday, 9 AM to 6 PM.</p>
-                </div>
+<section class="hero">
+    <div class="slider" id="slider">
+        <div class="slide active">
+            <img src="{{ asset('Images/slide1.jpg') }}" alt="Stylish eyeglass frames display">
+            <div class="slide-content">
+                <h1>See the World Clearly</h1>
+                <p>Premium prescription lenses fitted by licensed optometrists — at prices your family can afford.</p>
             </div>
         </div>
+        <div class="slide">
+            <img src="{{ asset('Images/slide2.jpg') }}" alt="Customer trying on new frames">
+            <div class="slide-content">
+                <h1>Frames That Fit Your Style</h1>
+                <p>Over 150 frame styles — from classic to trendy — with free fitting and lifetime adjustments.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{{ asset('Images/slide3.jpg') }}" alt="Optometrist performing an eye exam">
+            <div class="slide-content">
+                <h1>Free Eye Checkups</h1>
+                <p>Walk in for a comprehensive eye exam, Monday to Saturday, 9 AM to 6 PM.</p>
+            </div>
+        </div>
+    </div>
 
-        <button class="slider-btn prev" id="prevBtn">&#10094;</button>
-        <button class="slider-btn next" id="nextBtn">&#10095;</button>
-        <div class="dots" id="dots"></div>
-    </section>
+    <button class="slider-btn prev" id="prevBtn">&#10094;</button>
+    <button class="slider-btn next" id="nextBtn">&#10095;</button>
+    <div class="dots" id="dots"></div>
+</section>
 
     <section class="intro">
         <h2>Welcome to For Eyes</h2>
